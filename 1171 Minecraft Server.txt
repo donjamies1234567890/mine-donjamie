@@ -1,0 +1,15 @@
+termux-setup-storage
+
+cd /storage/emulated/0/mine
+
+pkg install wget
+
+wget -O java17 https://download.java.net/java/GA/jdk17.0.1/2a2082e5a09d4267845be086888add4f/12/GPL/openjdk-17.0.1_linux-aarch64_bin.tar.gz
+
+pkg install openjdk-17
+
+java -Xms1G  -Xmx1G -jar server.jar
+
+change eula=false to eula=true
+
+server.properties do what ever you want
